@@ -22,5 +22,5 @@ I hope you will be able to use these templates
 and codes as *starting point* to produce 
 amazing and publication-standard results!
 
-Check the app [here](Insertlinkhere)
-![Dashboard UI](assets/github-readme.png)
+***************************************************************
+Check the app [here](https://rethink-presentation.streamlit.app/)
