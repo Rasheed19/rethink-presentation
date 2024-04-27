@@ -9,7 +9,7 @@ def page() -> None:
         "tl-feature-importance.jpg",
     ]
     CODES = [
-        """
+        r"""
 def plot_target_transform_comparison(
     data: np.ndarray,
     bins: int,
@@ -60,7 +60,7 @@ def plot_target_transform_comparison(
 
     return None
 """,
-        """
+        r"""
 def plot_feature_importance(
     analysis_result: dict, threshold: int, tag: str, fig_labels: List[str] = None
 ) -> None:
@@ -101,7 +101,7 @@ def plot_feature_importance(
 
     return None
 """,
-        """
+        r"""
 import pandas as pd
 from sksurv.base import SurvivalAnalysisMixin
 from sklearn.inspection import permutation_importance

@@ -9,7 +9,7 @@ def page() -> None:
         "batch-survival-analysis-plot.jpg",
     ]
     CODES = [
-        """
+        r"""
 def plot_full_pulse_profile(
     path_to_sample_cell: str,
     pulse_cycle: int,
@@ -72,7 +72,7 @@ def plot_full_pulse_profile(
 
     plt.show()
 """,
-        """
+        r"""
 
 def plot_time_threshold_effect(threshold_data_dict: dict) -> None:
     fig = plt.figure(figsize=set_size(fraction=1, subplots=(1, 2)))
@@ -121,7 +121,7 @@ def plot_time_threshold_effect(threshold_data_dict: dict) -> None:
 
     return None
 """,
-        """
+        r"""
 def plot_filtered_capacity(sample_cells: List[str], structured_data: dict) -> None:
     fig = plt.figure(figsize=set_size(subplots=(3, 3)))
     fig_labels = ["a", "b", "c", "d", "e", "f", "g", "h", "i"]
@@ -187,7 +187,7 @@ def plot_filtered_capacity(sample_cells: List[str], structured_data: dict) -> No
 
     return None
 """,
-        """
+        r"""
 def plot_kaplan_meier_surv_prob(
     loaded_data: dict[str, dict], batch_names: list[str]
 ) -> None:

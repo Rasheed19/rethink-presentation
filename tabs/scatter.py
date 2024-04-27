@@ -8,7 +8,7 @@ def page() -> None:
         "pulse_project_count_end_of_life.jpg",
     ]
     CODES = [
-        """
+        r"""
 def strip_plot_firstpulse_cycle_life(
     structured_data_with_pulse: dict,
     *,
@@ -91,7 +91,7 @@ def strip_plot_firstpulse_cycle_life(
 
     return None
 """,
-        """
+        r"""
 def axis_to_fig(axis: Any) -> Callable[[tuple], Any]:
     '''
     Converts axis to fig object.
@@ -224,7 +224,7 @@ def parity_plot(prediction_data_list: List[dict], tag: str) -> None:
 
     return None
 """,
-        """
+        r"""
 def distribution_of_firstpulse_cycle_life(
     structured_data_with_pulse: dict, pulse: bool = False
 ) -> None:

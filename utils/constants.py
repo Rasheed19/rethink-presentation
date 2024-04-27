@@ -1,6 +1,6 @@
 class Constants:
 
-    CODE_HEADER: str = """ 
+    CODE_HEADER: str = r""" 
 import matplotlib.pyplot as plt
 import seaborn as sns
 from matplotlib import rc

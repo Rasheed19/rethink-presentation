@@ -7,7 +7,7 @@ def page() -> None:
         "pulse_project_roc_confusion_matrix.jpg",
     ]
     CODES = [
-        """
+        r"""
 def jaccard_similarity(list1: list, list2: list) -> float:
     set1 = set(list1)
     set2 = set(list2)
@@ -75,7 +75,7 @@ def plot_feature_similarity(data: dict, tag: str, fig_label: str = None) -> None
         bbox_inches="tight",
     )
 """,
-        """
+        r"""
 def plot_cunfusion_matrix_roc_curve(
     y_true: np.ndarray,
     y_pred: np.ndarray,
